@@ -1,0 +1,627 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, sans-serif;
+    line-height: 1.4;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Utility Classes */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.text-primary {
+    color: #3693ff;
+}
+.bg-dark{
+    background: #333;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 2px solid #3693ff; 
+}
+#navbar .openMenu {
+    display: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+#navbar .closeMenu, .mainMenu .icons i{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.mainMenu .icons a {
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul{
+    display: inline-flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+#navbar h2 a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    
+    
+}
+
+#navbar li a:hover{
+    background-color: #3696ff; 
+    transition: background-color .5s;
+}
+
+
+/* Showcase Area */
+
+#showcase {
+    background: url(../images/_MG_4803.png) no-repeat center center/cover;
+    height: 93vh;
+}
+
+.showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+           
+}
+
+.showcase-content h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    
+}
+
+.showcase-content .btn {
+    font-size: 1.5rem;
+    padding: 1rem 10rem;
+    transition: color 0.3s, background 0.3s;
+}
+
+.showcase-content .btn:hover {
+    background: #3693ff;
+    color: #fff;
+}
+
+.btn {
+    color: #3693ff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid #3693ff;
+    border-radius: 10px;
+    font-weight: bold;
+    
+}
+/* Section: About */
+
+#about {
+    padding: 5rem 0;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    
+}
+
+#about h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p.lead {
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+
+#about .about-content {
+    display: flex;
+
+}
+#about .about-text,
+#about .about-image{
+    flex: 1;
+}
+
+#about .about-text{
+    text-align: justify;
+}
+.about-image img{
+    display: block;
+    width: 70%;
+    border-radius: 40%;
+    margin-top: 12px;
+    /* margin-left: 130px; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+}
+/* Testimonials Sections */
+
+#testimonials {
+    background: url(../images/XWzsRGo98EMCiW4bZoX6bD-768-80.jpg) no-repeat center center/cover;
+    height: 88vh;
+}
+
+
+.testimonials-bg {
+    position: absolute;
+    height: 88%;
+    width: 100%;
+    background: rgba(0,0,0,0.5); 
+    padding: 3rem 1;
+}
+
+#testimonials h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+#testimonials .boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+#testimonials .box{
+    background: rgba(54,147,255,0.7);
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    border-radius: 15px;
+}
+
+
+#testimonials .box:first-child, #testimonials .box:nth-child(2) {
+    margin-bottom: 2rem;
+}
+
+#testimonials .box img {
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+
+#testimonials p {
+    color: #fff;
+}
+
+
+/* Contact */
+#contact {
+    padding: 2rem 0;
+    
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+}
+
+#contact h3{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    margin-top: 3rem;
+}
+
+#contact .form-box{
+    background: #fff;
+    padding: 3rem;
+    box-shadow: 2px 3px 5px #d1d1d1;
+    border-radius: 10px;
+    
+}
+
+#contact .form-group{
+    margin-bottom: 2rem;
+}
+
+#contact .form-group label{
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.1rem; 
+}
+
+#contact .form-group input,
+#contact .form-group textarea {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border: 0.5px solid #333;
+    border-radius: 5px;
+        
+}
+
+#contact .form-group textarea{
+    font-family: arial, sans-serif;
+
+}
+
+#contact .contact-btn{
+    width: 80%;
+    margin-left: 10%;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background: #3693ff;
+    margin-bottom: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+
+#contact .contact-btn:hover{
+    background: #0378ff;
+}
+
+#contact .form-container{
+    position: relative;
+    padding: 5px;
+    margin-top: -50px; 
+}
+
+#contact .mail-icon{
+    font-size: 4rem;
+    background: 3693ff;
+    color: #fff;
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    border-radius: 50%;
+    position: absolute;
+    left:45%;      
+}
+
+/* footer */
+
+footer {
+    padding: 1.2rem;
+}
+
+footer p, .icons {
+    text-align: center;
+}
+
+footer .icons {
+    font-size: 25px;
+}
+
+footer .icons a {
+    color: #fff;
+    padding: 0 7px 0 7px;
+}
+
+footer .icons a:hover {
+    color: rgb(184, 178, 178);
+}
+
+.theForm {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+.button-message  {
+    width: 30%;
+    align-items: center;
+    text-align: center;
+    padding: .7rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    background: #3693ff;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.button-message:hover {
+    background: #3693ff;
+    color: #fff;
+}
+
+.ThankYou {
+    font-size: 4rem;
+}
+
+@media only screen and (max-width: 425px) and (min-width: 170px) {
+    #about .about-content {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        }
+
+    .about-image img {
+        margin-right: 100px;
+        display: inline-block;
+        max-width: 200px;
+        width: auto; 
+        height: auto;
+        }
+
+    .about-text {
+        width: 100%;
+        text-align: justify;
+        line-height: 28px;
+        padding: 30px;
+        }
+
+    #about h2{
+        margin-bottom: 2rem;
+        text-align: center;
+        margin-left: 500px;
+        }
+    #about .container .about-heading {
+        align-items: center;
+        text-align: center;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    #navbar .openMenu {
+        display: block;    
+        }
+    
+        #navbar .mainMenu {
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            cursor: pointer;
+            align-items: center;
+            text-align: center;
+            font-size: 2rem;
+            background: #333;
+            opacity: 0.8;
+            height: 100%;
+            max-height: 100%;
+            width: 100%;
+            min-width: 50%;
+            z-index: 10;
+            justify-content: center;
+            align-items: center;
+            transition: top 1s ease;
+        }
+        #navbar ul li {
+            padding: 20px;
+        }
+    
+        #navbar ul li a{
+            font-size: 3rem;
+        }
+        #navbar ul li a:hover {
+            color: rgb(255, 255, 255);
+        }
+        #navbar ul .closeMenu {
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 11;
+        }
+        .mainMenu .icons i {
+            padding: 12px;
+            font-size: 3rem;
+            display: inline-block;
+        }
+    
+        #about .about-content {
+        display: block;
+        }
+    
+        #about .about-text{
+        text-align: center;
+        }
+        #about h2{
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+    
+
+}
+
+
+/* WIDTH NAVBAR */
+ @media only screen and (max-width: 1023px) {
+        
+    #about .about-content {
+        align-items: center;
+        text-align: center;
+        }
+
+    .about-image img {
+        /* margin-right: 120px; */
+        display: inline-block;
+        max-width: 200px;
+        width: auto; 
+        height: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        }
+
+    .about-text {
+        width: 100%;
+        text-align: justify;
+        line-height: 28px;
+        padding: 5px 30px 5px 30px;
+        }
+
+    #about h2{
+        margin-bottom: 2rem;
+        text-align: center;
+        margin-left: 500px;
+        }
+    #about .container .about-heading {
+        align-items: center;
+        text-align: center;
+        max-width: 1100px;
+        margin: auto;
+    }
+    
+} 
+
+/* WIDTH  ABOUT */
+@media screen and (max-width: 1023px){
+
+    #navbar .openMenu {
+    display: block;    
+    }
+
+    #navbar .mainMenu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        cursor: pointer;
+        align-items: center;
+        text-align: center;
+        font-size: 2rem;
+        background: #333;
+        opacity: 0.8;
+        height: 100%;
+        max-height: 100%;
+        width: 100%;
+        min-width: 100%;
+        z-index: 10;
+        justify-content: center;
+        align-items: center;
+        transition: top 1s ease;
+    }
+    #navbar ul li {
+        padding: 20px;
+    }
+
+    #navbar ul li a{
+        font-size: 3rem;
+    }
+    #navbar ul li a:hover {
+        color: rgb(255, 255, 255);
+    }
+    #navbar ul .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 11;
+    }
+    .mainMenu .icons i {
+        padding: 12px;
+        font-size: 3rem;
+        display: inline-block;
+    }
+
+    #about .about-content {
+        display: block;
+    }
+
+    #about .about-text{
+        text-align: center;
+    }
+    #about h2{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+
+    }
+
+    @media screen and (max-width: 450px) {
+    html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-size: 60%;
+        width:100%;
+      }
+    #showcase {
+        height: 60vh;
+        width: auto;
+    }
+    #showcase .showcase-content {
+        bottom: 300px;
+    }
+
+    .showcase-content .btn{
+        padding: 1rem 3rem;
+        transition: color 0.3s, background 0.3s;
+    }
+    .showcase-content.container {
+        max-width: 250px;
+        margin: auto;
+    }
+      .about-image img {
+        max-width: 100px;
+    }
+    .navbar, #showcase, #about {
+        width: 100%;
+    }
+    }

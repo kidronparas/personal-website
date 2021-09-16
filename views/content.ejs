@@ -1,0 +1,134 @@
+<%- include('header') -%>
+
+    <nav id="navbar">
+        <h2><a href="#home"><span class="text-primary">Kidron</span> Paras</a></h2>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#testimonials">Testimonials</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+            <!-- <li><a target="_blank" href="https://www.facebook.com/Increase.Christ"><img height="23px" width="13px" src="images/facebook.png"> </a></li> -->
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons">
+                <a href="https://www.instagram.com/kidron_paras/" target="_bla"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/Increase.Christ" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/kidron-paras-26a2141ab/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </span>
+        </ul>
+
+    </nav>
+
+    <!-- Showcase Area -->
+
+    <header id="showcase">
+        <div class="showcase-content">
+            <div class="container">
+                <h1>Take Your Business to the <br> <span class="text-primary">Next Level</span> </h1>
+                <a href="#about" class="btn">GET TO KNOW ME</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Section: About -->
+
+    <section id="about">
+        <div class="container">
+            <h2 class="about-heading">Get to Know <span class="text-primary">Me</span></h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- <img src="images/IMG_0589.jpg" alt="Image"/> -->
+                    <img src="../images/IMG_0589.png" alt="Image" class="image-about" />
+                </div>
+                <div class="about-text">
+                    <h3>A Little Bit <span class="text-primary">About Myself</span></h3>
+                    <p class="lead">Hi, My Name is Kidron T. Paras and I'm already 25 years old. I live in
+                        Angeles City, Pampanga. I am a certified Computer Technician
+                        since 2017. I am a Cnc Programmer/Operator and Cad operator Since 2018. I am also a Web
+                        Developer and T-shirt Designer at the same time in <a target="_blank"
+                            href="https://www.redbubble.com/account/settings">Redbubble</a>. I also worked as a Data
+                        Encoder
+                        for 3 years In Coca Cola Company way back 2014-2017. </p>
+                    <p class="lead">I studied web developing because I want to discover more on how does a website
+                        works. Now
+                        That I know how it works, I want to apply it and make a lot of web site and became my passion.
+                        As Confucius said "Follow Your Passion and You Will Never Work a Day in Your Life". One of my
+                        passion is to learn new things.
+                        That's why i keep on studying things. My next goal is to study Automotive and build my own
+                        business while I'm working as a Web Developer.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section: Testimonials -->
+    <!-- <section id="testimonials"> -->
+    <!-- <div class="testimonials-bg">
+            <div class="container">
+                <h2>What They Say <span class="text-primary">About Me</span></h2>
+                <div class="boxes">
+                    <div class="box">
+                        <img height="130" width="130" src="images/72172459_1503031916527825_7315474201635192832_o.jpg" alt="Customer 1">
+                        <p> I like your progress on Web developing. I'm Proud of you Man, You're doing good.</p>
+                       
+                    </div>
+                    
+                    <div class="box">
+                        <img height="130" width="130" src="images/11407280_10152960371556167_8938731546504596374_n.jpg" alt="Customer 2">
+                        <p> You are Great in Cad. Train Your Workmates how to Cad. Share your knowledge to them.</p>
+                       
+                    </div>
+                    <div class="box">
+                        <img height="130" width="130" src="images/57358059_2655422244530626_9081013026546515968_o.jpg" alt="Customer 3">
+                        <p> I trained alot of people about Programming Cnc Machines, but You are a Fast learner. </p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br> -->
+
+    <!-- Section: Contact -->
+    <section id="contact" class="bg-light">
+        <div class="container">
+
+            <div class="form-container">
+
+                <div class="form-box">
+                    <h2>Get Your <span class="text-primary"> Website</span> Now</h2>
+                    <h3>Shoot Me a <span class="text-primary"> Message</span></h3>
+                    <form action="/message" method="POST">
+                        <div class="form-group">
+                            <label for="first-name" for="fname">First Name</label>
+                            <input name="fname" type="text" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Last Name</label>
+                            <input name="lname" type="text" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea rows="7" name="message" placeholder="Message Me"></textarea>
+                        </div>
+                        <div class="button">
+                            <button class="contact-btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <%- include('footer') -%>
